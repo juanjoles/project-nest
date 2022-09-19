@@ -21,6 +21,7 @@ export class CarsController {
     @Post()
     createCar(@Body() body:any){
         return body;
+        
     }
 
     @Patch(':id')

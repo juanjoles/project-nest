@@ -8,4 +8,5 @@ export class CreateCarDto {
    @IsString() 
    //@MinLength(3,{message:'the model is incorrect.'})
    readonly model:string;
+   
 }

@@ -16,6 +16,11 @@ export class BrandsController {
   findAll() {
     return this.brandsService.findAll();
   }
+  //this method is test.
+  @Get(':id/satus')
+  findOneStatus(@Param('id', ParseUUIDPipe) id:string){
+    return this.brandsService.findAll();
+  }
 
   @Get(':id')
   findOne(@Param('id', ParseUUIDPipe) id: string) {

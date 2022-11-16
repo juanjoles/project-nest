@@ -22,6 +22,7 @@ export class BrandsController {
     return this.brandsService.findAll();
   }
 
+  
   @Get(':id')
   findOne(@Param('id', ParseUUIDPipe) id: string) {
     return this.brandsService.findOne(id);

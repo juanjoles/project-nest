@@ -6,7 +6,7 @@ export class CreateCarDto {
    readonly brand:string;
 
    @IsString() 
-   //@MinLength(3,{message:'the model is incorrect.'})
+   @MinLength(3,{message:'the model is incorrect.'})
    readonly model:string;
    
 }

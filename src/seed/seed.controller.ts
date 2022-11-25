@@ -8,4 +8,9 @@ export class SeedController {
   runSeed() {
     return this.seedService.populateDB();
   }
+
+  @Post()
+  findAll() {
+    return 'test';
+  }
 }
